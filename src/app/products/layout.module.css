@@ -1,0 +1,8 @@
+.nav {
+  padding: 8px 0px;
+  border: 1px solid pink;
+  margin-bottom: 8px;
+}
+.nav a {
+  padding: 8px;
+}
