@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./layout.module.css";
+import Link from "next/link";
+
 export default function ProductsLayout({
   children,
 }: {
@@ -8,8 +10,8 @@ export default function ProductsLayout({
   return (
     <>
       <nav className={style.nav}>
-        <a href="">남성복</a>
-        <a href="">여성복</a>
+        <Link href="/products/man">남성복</Link>
+        <Link href="/products/women">여성복</Link>
       </nav>
       <section>{children}</section>
     </>
