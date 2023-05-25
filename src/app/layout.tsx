@@ -1,11 +1,15 @@
 import { Inter } from "next/font/google";
 import CSS from "./layout.module.css";
 import Link from "next/link";
+import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "ian's first Next.js app",
   description: "made by create next app...",
+  icons: {
+    icon: "/favicon/ico",
+  },
 };
 
 export default function RootLayout({
